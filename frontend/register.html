@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Campus Lost & Found</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                Campus <span>Lost & Found</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main class="auth-section">
+
+        <div class="auth-container">
+
+            <div class="auth-heading">
+                <h1>Create Your Account</h1>
+
+                <p>
+                    Join the Sai University Campus Lost and Found Portal.
+                </p>
+            </div>
+
+
+            <form id="registerForm">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">University Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create a password"
+                        minlength="6"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Re-enter your password"
+                        minlength="6"
+                        required
+                    >
+                </div>
+
+
+                <button type="submit" class="auth-btn">
+                    Create Account
+                </button>
+
+
+                <p id="registerMessage" class="form-message"></p>
+
+            </form>
+
+
+            <div class="auth-footer">
+                Already have an account?
+                <a href="login.html">Login here</a>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Sai University | Campus Lost and Found Portal</p>
+        <p>School of Computing and Data Science</p>
+    </footer>
+
+
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>

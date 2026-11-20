@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Items | Campus Lost & Found</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <h2>Campus Lost & Found</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="student-dashboard.html">Dashboard</a>
+            <a href="report-item.html">Report Item</a>
+            <button onclick="logout()">Logout</button>
+        </nav>
+    </header>
+
+    <section class="auth-section">
+
+        <div class="auth-container">
+
+            <h1>Browse Lost & Found Items</h1>
+
+            <p>Search for items reported on campus.</p>
+
+            <div class="form-group">
+                <label for="search">Search Item</label>
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Enter item name..."
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="category">Filter by Category</label>
+
+                <select id="category">
+                    <option value="">All Categories</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Bags">Bags</option>
+                    <option value="Accessories">Accessories</option>
+                    <option value="Books">Books</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Documents">Documents</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Filter by Location</label>
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Enter campus location..."
+                >
+            </div>
+
+            <div class="form-group">
+    <label for="building">Filter by Campus Building</label>
+
+    <select id="building">
+        <option value="">All Campus Locations</option>
+        <option value="University Library">University Library</option>
+        <option value="University Cafeteria">University Cafeteria</option>
+        <option value="Block A">Block A</option>
+        <option value="Block B">Block B</option>
+        <option value="Computer Science Lab">Computer Science Lab</option>
+        <option value="Auditorium">Auditorium</option>
+    </select>
+</div>
+
+            <div class="form-group">
+                <label for="listingType">Item Type</label>
+
+                <select id="listingType">
+                    <option value="">All Items</option>
+                    <option value="lost">Lost Items</option>
+                    <option value="found">Found Items</option>
+                </select>
+            </div>
+
+            <button type="button" class="auth-btn" id="searchButton">
+                Search Items
+            </button>
+
+            <button type="button" class="auth-btn" id="resetButton">
+                Reset Filters
+            </button>
+
+            <h2>Available Items</h2>
+
+            <div id="itemsContainer">
+                Loading items...
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/browse.js"></script>
+
+</body>
+</html>

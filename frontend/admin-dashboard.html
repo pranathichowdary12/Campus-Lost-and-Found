@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Campus Lost & Found</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2>Campus Lost & Found</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <button onclick="logout()">Logout</button>
+        </nav>
+    </header>
+
+    <section class="auth-section">
+        <div class="auth-container">
+            <h1>Admin Dashboard</h1>
+            <p>Welcome, Administrator!</p>
+
+            <div id="statistics">
+                Loading dashboard statistics...
+            </div>
+
+            <h2>Manage Claims</h2>
+            <div id="claims">
+                Loading claims...
+            </div>
+        </div>
+    </section>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
