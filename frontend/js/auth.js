@@ -35,7 +35,7 @@ if (registerForm) {
 
             // Send registration data to backend
             const response = await fetch(
-                'http://localhost:5000/api/auth/register',
+                'https://campus-lost-and-found-tt3q.onrender.com/api/auth/register',
                 {
                     method: 'POST',
 
@@ -101,7 +101,7 @@ if (loginForm) {
 
             // Send login request to backend
             const response = await fetch(
-                'http://localhost:5000/api/auth/login',
+                'https://campus-lost-and-found-tt3q.onrender.com/api/auth/login',
                 {
                     method: 'POST',
 
