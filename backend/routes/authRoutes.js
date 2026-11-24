@@ -91,7 +91,9 @@ router.post('/login', async (req, res) => {
         "Role:",
         user.role,
         "Database:",
-        User.db.name
+        User.db.name,
+        "Host:",
+        User.db.host
     );
 }
 
