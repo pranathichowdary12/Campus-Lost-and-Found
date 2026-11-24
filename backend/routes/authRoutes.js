@@ -84,6 +84,17 @@ router.post('/login', async (req, res) => {
         // Find user
         const user = await User.findOne({ email });
 
+        if (user) {
+    console.log(
+        "LOGIN CHECK:",
+        user.email,
+        "Role:",
+        user.role,
+        "Database:",
+        User.db.name
+    );
+}
+
         if (!user) {
             return res.status(401).json({
                 message: 'Invalid email or password'
